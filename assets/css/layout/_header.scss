@@ -1,3 +1,41 @@
-.header{
-    display: block;
+
+
+
+
+
+.header-area{
+    padding: 20px 0;
+    .log{
+        a{
+            display: inline-block;
+            color: $link_color;
+            font-size: 24px;
+            font-weight: 700;
+            border: 1px solid $border_color;
+            padding: 15px 10px;
+            text-transform: uppercase;
+        }
+    }
+    .menu{
+        ul{
+            li{
+                a{
+                    display: block;
+                    color: #333;
+                    font-size: 18px;
+                    margin-left: 15px;
+                    text-transform: uppercase;
+                    transition: .3s;
+                    &:hover{
+                        color: $link_hover;
+
+                    }
+                }
+            }
+        }
+    }
+
 }
+
+
+

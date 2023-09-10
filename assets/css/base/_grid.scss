@@ -1,0 +1,37 @@
+.container , .container-fluid{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin:  0 -15px;
+    }
+}
+$grid-columns: 12;
+$grid-xxl-breakpoints: 1400px;
+$grid-xl-breakpoints: 1200px;
+
+@media (min-width: $grid-xxl-breakpoints){
+    .container{
+        width: 1320px;
+    }
+    @for $i from 1 through $grid-columns{
+        .col-xxl-#{$i}{
+            width: (100/12)*$i*1%;
+            padding: 0 15px;
+        }
+    }
+}
+@media (min-width: $grid-xl-breakpoints){
+    .container{
+        width: 1320px;
+        margin: 0 auto;
+    }
+    @for $i from 1 through $grid-columns{
+        .col-xl-#{$i}{
+            width: (100/12)*$i*1%;
+            padding: 0 15px;
+        }
+    }
+}
