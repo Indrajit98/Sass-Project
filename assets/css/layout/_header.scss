@@ -31,13 +31,13 @@
           &::before {
             content: "";
             position: absolute;
-            width: 1%;
+            width: 1px;
             height: 2px;
             background-color: $theme;
             top: 25px;
-            transition: 1s;
+            transition: .5s;
             left: 35%;
-            opacity: 0;
+            transform: translateX(-50% -50%);
           }
           &:hover {
             color: $link_hover;

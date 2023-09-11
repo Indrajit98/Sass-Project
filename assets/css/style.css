@@ -422,6 +422,43 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 15px;
   }
 }
+.section-title h4 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.section-title h4::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: #ff3636;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title h4::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ff3636;
+  bottom: -3px;
+  left: 35%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: round-move 3s linear infinite;
+}
+@keyframes round-move {
+  to {
+    left: 65%;
+  }
+}
 .header-area {
   padding: 20px 0;
   position: fixed;
@@ -452,13 +489,13 @@ h1, h2, h3, h4, h5, h6 {
 .header-area .menu ul li a::before {
   content: "";
   position: absolute;
-  width: 1%;
+  width: 1px;
   height: 2px;
   background-color: #ff3636;
   top: 25px;
-  transition: 1s;
+  transition: 0.5s;
   left: 35%;
-  opacity: 0;
+  transform: translateX(-50% -50%);
 }
 .header-area .menu ul li a:hover {
   color: #ff3636;
@@ -507,4 +544,28 @@ h1, h2, h3, h4, h5, h6 {
 .about-area .about-content ul li i {
   color: #ff3636;
   margin-right: 5px;
+}
+.services-area {
+  background-color: #f6f6f6;
+}
+.services-area .single-service {
+  background-color: #fff;
+  padding: 25px 30px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.services-area .single-service:hover i {
+  border-radius: 50%;
+}
+.services-area .single-service i {
+  font-size: 20px;
+  background-color: #ff3636;
+  color: #fff;
+  padding: 20px;
+  transition: 0.3s;
+}
+.services-area .single-service h4 {
+  font-size: 24px;
+  margin: 20px 0;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */

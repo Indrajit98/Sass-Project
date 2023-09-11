@@ -1,0 +1,42 @@
+.section-title {
+  h4 {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background: $theme;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: $theme;
+      bottom: -3px;
+      left: 35%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      animation: round-move 3s linear infinite;
+      @keyframes round-move {
+      to {
+        left: 65%;
+      }
+    }
+    }
+    
+  }
+  p {
+  }
+}
