@@ -1,3 +1,6 @@
+@import './variables';
+
+// common css 
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +18,61 @@ img{
     max-width: 100%;
     vertical-align: middle;
 }
+$align: left,center,right, justify;
+@each $i in $align{
+    .text-align-#{$i}{
+        text-align: $i;
+    }
+}
+
+// button css 
+
+.btn{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 3px;
+    &.btn-primary{
+        background-color:$btn_background;
+        padding: 10px 30px;
+        &:hover{
+            background-color: $border_color;
+            cursor: pointer;
+        }
+    }
+    &.btn-border{
+        border:2px solid $btn_background ;
+        padding: 8px 30px;
+        &:hover{
+            background-color: $btn_background ;
+            cursor: pointer;
+        }
+    }
+}
+
+// Background image css 
+.bg{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $black;
+        opacity: .5;
+        z-index: -2;
+    }
+
+}
+
+
+// flex css 
 
 $flex: flex,inline-flex;
 @each $i in $flex{
