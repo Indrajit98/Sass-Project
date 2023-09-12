@@ -1,4 +1,14 @@
 .projects-area{
+    .section-title{
+        h4{
+            &::before{
+                width: 80px;
+            }
+        }
+    }
+    .col-xl-4{
+        padding: 0;
+    }
     .single-project{
         background-size: cover;
         background-position: center;
