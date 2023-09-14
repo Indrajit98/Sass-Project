@@ -490,12 +490,14 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   width: 1px;
-  height: 2px;
+  height: 1px;
   background-color: #ff3636;
   top: 25px;
   transition: 0.5s;
-  left: 35%;
-  transform: translateX(-50% -50%);
+  left: 50%;
+  transform: translateX(-50%);
+  transform: scale(1);
+  opacity: 0;
 }
 .header-area .menu ul li a:hover {
   color: #ff3636;
@@ -650,4 +652,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 .counter-area .single-counter p {
   text-transform: capitalize;
+}
+
+.timeline-area .timeline-list {
+  position: relative;
+}
+.timeline-area .timeline-list::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #ff3636;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.timeline-area .timeline-list li {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+.timeline-area .timeline-list li::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff3636;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.timeline-area .timeline-list li:nth-child(even) .timeline-content {
+  float: right;
+  text-align: left;
+}
+.timeline-area .timeline-list .timeline-content {
+  border: 1px solid #333;
+  width: 45%;
+  padding: 20px;
+  float: left;
+  text-align: right;
+}
+.timeline-area .timeline-list .timeline-content span {
+  font-size: 20px;
+  color: #ff3636;
+  font-weight: 600;
+}
+.timeline-area .timeline-list .timeline-content h4 {
+  text-transform: capitalize;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

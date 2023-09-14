@@ -32,12 +32,14 @@
             content: "";
             position: absolute;
             width: 1px;
-            height: 2px;
+            height: 1px;
             background-color: $theme;
             top: 25px;
             transition: .5s;
-            left: 35%;
-            transform: translateX(-50% -50%);
+            left: 50%;
+            transform: translateX(-50%);
+            transform: scale(1);
+            opacity: 0;
           }
           &:hover {
             color: $link_hover;
