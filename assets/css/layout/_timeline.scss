@@ -1,4 +1,11 @@
 .timeline-area{
+    .section-title{
+        h4{
+            &::before{
+                width: 90px;
+            }
+        }
+    }
     .timeline-list{
         position: relative;
         &::after{

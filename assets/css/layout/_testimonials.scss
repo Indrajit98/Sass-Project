@@ -1,9 +1,15 @@
 .testimonials-area {
   background-color: $black;
   color: $white;
+  .section-title{
+    h4{
+        &::before{
+            width: 100px;
+        }
+    }
+}
 
   .testimonials {
-    margin-top: 40px;
     .slick-arrow {
       position: absolute;
       top: 50%;
