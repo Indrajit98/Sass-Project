@@ -22,6 +22,10 @@ img {
   vertical-align: middle;
 }
 
+.mx-auto {
+  margin: 0 auto;
+}
+
 .text-align-left {
   text-align: left;
 }
@@ -704,4 +708,88 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   line-height: 45px;
   margin-bottom: 5px;
+}
+
+.testimonials-area {
+  background-color: #333;
+  color: #fff;
+}
+.testimonials-area .testimonials {
+  margin-top: 40px;
+}
+.testimonials-area .testimonials .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.testimonials-area .testimonials .slick-arrow i {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ff3636;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ff3636;
+}
+.testimonials-area .testimonials .slick-arrow i:hover {
+  background-color: #333;
+  border: 1px solid #ff3636;
+  transition: 0.5s;
+}
+.testimonials-area .testimonials .slick-prev {
+  left: -80px;
+}
+.testimonials-area .testimonials .slick-next {
+  right: -80px;
+}
+.testimonials-area .testimonials .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.testimonials-area .testimonials .slick-dots li {
+  display: inline-block;
+  margin-left: 0px;
+  padding-left: 10px;
+}
+.testimonials-area .testimonials .slick-dots li.slick-active button {
+  background-color: #ff3636;
+  color: #fff;
+}
+.testimonials-area .testimonials .slick-dots li button {
+  background-color: #fff;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.testimonials-area .testimonials .single-testimonial {
+  text-align: center;
+}
+.testimonials-area .testimonials .single-testimonial img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+.testimonials-area .testimonials .single-testimonial p {
+  width: 70%;
+  margin: 0 auto;
+}
+.testimonials-area .testimonials .single-testimonial h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+.testimonials-area .testimonials .single-testimonial h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-top: 9px;
 }/*# sourceMappingURL=style.css.map */

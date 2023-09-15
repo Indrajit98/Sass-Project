@@ -19,6 +19,9 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+.mx-auto{
+  margin: 0 auto;
+}
 $align: left, center, right, justify;
 @each $i in $align {
   .text-align-#{$i} {
