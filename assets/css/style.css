@@ -4,9 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family:Arial, Helvetica, sans-serif;
-}
 
 p {
   font-size: 16px;
@@ -837,4 +834,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 .price-area .single-price a {
   margin-top: 15px;
+}
+
+.team-area .section-title h4::before {
+  width: 65px;
+}
+.team-area .single-team {
+  position: relative;
+  overflow: hidden;
+}
+.team-area .single-team img {
+  width: 100%;
+}
+.team-area .single-team .team-overlay {
+  position: absolute;
+  bottom: -110px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #333;
+  transition: 0.5s;
+}
+.team-area .single-team .team-overlay h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.team-area .single-team .team-overlay span {
+  text-transform: lowercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  display: block;
+}
+.team-area .single-team .team-overlay a {
+  color: #fff;
+  font-size: 16px;
+}
+.team-area .single-team .team-overlay a i {
+  padding: 5px;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
+.team-area .single-team .team-overlay a i:hover {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #ff3636;
+}
+.team-area .single-team:hover {
+  cursor: pointer;
+}
+.team-area .single-team:hover .team-overlay {
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */

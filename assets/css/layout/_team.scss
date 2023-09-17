@@ -1,0 +1,67 @@
+.team-area {
+    .section-title {
+        h4 {
+            &::before {
+                width: 65px;
+            }
+        }
+    }
+
+    .single-team {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        .team-overlay {
+            position: absolute;
+            bottom: -110px;
+            left: 0;
+            text-align: center;
+            width: 100%;
+            background-color: $black;
+            transition: 0.5s;
+            h4 {
+                text-transform: capitalize;
+                font-size: 24px;
+                color: $white;
+                margin-bottom: 5px;
+                margin-top: 15px;
+            }
+
+            span {
+                text-transform: lowercase;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 10px;
+                display: block;
+            }
+
+            a {
+                color: $white;
+                font-size: 16px;
+                
+
+                i {
+                    padding: 5px;  
+                    border: 1px solid $black;
+                    margin-bottom: 10px;
+                    &:hover{
+                        border: 1px solid $white;
+                        border-radius: 50%;
+                        color: $theme;
+                    } 
+                }
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            .team-overlay{
+            bottom: 0;
+            }
+
+        }
+    }
+}
