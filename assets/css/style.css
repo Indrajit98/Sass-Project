@@ -208,6 +208,7 @@ img {
   font-size: 20px;
   line-height: 30px;
   border-radius: 3px;
+  transition: 0.5s;
 }
 .btn.btn-primary {
   background-color: #ff3636;
@@ -888,4 +889,60 @@ h1, h2, h3, h4, h5, h6 {
 }
 .team-area .single-team:hover .team-overlay {
   bottom: 0;
+}
+
+.blog-area {
+  background-color: #f6f6f6;
+}
+.blog-area .single-blog {
+  background-color: #fff;
+}
+.blog-area .single-blog .blog-image {
+  position: relative;
+  overflow: hidden;
+}
+.blog-area .single-blog .blog-image img {
+  width: 100%;
+  transition: 0.3s;
+}
+.blog-area .single-blog .blog-meta {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #f6f6f6;
+  padding: 10px;
+  margin-top: -20px;
+  z-index: 2;
+  position: relative;
+}
+.blog-area .single-blog .blog-meta a {
+  color: #333;
+  transition: 0.3s;
+}
+.blog-area .single-blog .blog-meta a:hover {
+  color: #ff3636;
+}
+.blog-area .single-blog .blog-meta a i {
+  padding-right: 10px;
+}
+.blog-area .single-blog .blog-content {
+  padding: 20px;
+}
+.blog-area .single-blog .blog-content h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.blog-area .single-blog .blog-content p {
+  margin: 15px 0;
+}
+.blog-area .single-blog .blog-content a {
+  margin-top: 10px;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.blog-area .single-blog:hover img {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

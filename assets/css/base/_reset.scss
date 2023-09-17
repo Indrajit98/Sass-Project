@@ -58,6 +58,7 @@ $align: left, center, right, justify;
   font-size: 20px;
   line-height: 30px;
   border-radius: 3px;
+  transition: .5s;
   &.btn-primary {
     background-color: $btn_background;
     padding: 10px 30px;

@@ -23,6 +23,7 @@
             width: 100%;
             background-color: $black;
             transition: 0.5s;
+
             h4 {
                 text-transform: capitalize;
                 font-size: 24px;
@@ -42,26 +43,27 @@
             a {
                 color: $white;
                 font-size: 16px;
-                
 
                 i {
-                    padding: 5px;  
+                    padding: 5px;
                     border: 1px solid $black;
                     margin-bottom: 10px;
-                    &:hover{
+
+                    &:hover {
                         border: 1px solid $white;
                         border-radius: 50%;
                         color: $theme;
-                    } 
+                    }
                 }
             }
         }
-        &:hover{
-            cursor: pointer;
-            .team-overlay{
-            bottom: 0;
-            }
 
+        &:hover {
+            cursor: pointer;
+
+            .team-overlay {
+                bottom: 0;
+            }
         }
     }
 }
