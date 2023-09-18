@@ -1,9 +1,14 @@
 $(document).ready(function () {
+  // popup image 
   $(".project-popup").magnificPopup({
     type: "image",
     gallery: {
       enabled: true,
     },
+  });
+  // popup video 
+  $(".video-popup").magnificPopup({
+    type: "iframe",
   });
 
   //   counter up jQuery

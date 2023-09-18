@@ -1,0 +1,24 @@
+.cta-area {
+    text-align: center;
+    color: $white;
+
+    a {
+        i {
+            color: $white;
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+    }
+
+    h4 {
+        font-size: 40px;
+        text-transform: capitalize;
+        line-height: 50px;
+
+    }
+
+    p {
+        margin: 10px 25px;
+    }
+
+}

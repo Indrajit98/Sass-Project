@@ -59,6 +59,7 @@ $align: left, center, right, justify;
   line-height: 30px;
   border-radius: 3px;
   transition: .5s;
+  text-transform: capitalize;
   &.btn-primary {
     background-color: $btn_background;
     padding: 10px 30px;

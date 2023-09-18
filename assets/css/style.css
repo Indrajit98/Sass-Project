@@ -209,6 +209,7 @@ img {
   line-height: 30px;
   border-radius: 3px;
   transition: 0.5s;
+  text-transform: capitalize;
 }
 .btn.btn-primary {
   background-color: #ff3636;
@@ -945,4 +946,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-area .single-blog:hover img {
   transform: scale(1.1);
+}
+
+.cta-area {
+  text-align: center;
+  color: #fff;
+}
+.cta-area a i {
+  color: #fff;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.cta-area h4 {
+  font-size: 40px;
+  text-transform: capitalize;
+  line-height: 50px;
+}
+.cta-area p {
+  margin: 10px 25px;
 }/*# sourceMappingURL=style.css.map */
