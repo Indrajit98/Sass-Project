@@ -964,4 +964,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cta-area p {
   margin: 10px 25px;
+}
+
+.contact-area .contact-form input,
+.contact-area .contact-form textarea {
+  width: 100%;
+  border: 1px solid #f6f6f6;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.contact-area .contact-form input[type=submit] {
+  background-color: #ff3636;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-area .contact-form input[type=submit]:hover {
+  background-color: #333;
+}
+.contact-area .contact-address .single-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.contact-area .contact-address .single-contact :last-child {
+  margin-bottom: 0px;
+}
+.contact-area .contact-address .single-contact i {
+  background-color: #ff3636;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+}
+.contact-area .contact-address .single-contact h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.contact-area .contact-address .single-contact h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-top: 5px;
 }/*# sourceMappingURL=style.css.map */
